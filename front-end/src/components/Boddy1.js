@@ -23,7 +23,7 @@ function Boddy1() {
             maxBlockSize={'200px'}
           >
             <Box mt={3} gridColumn={gridColumn.gc6}>
-              <h1 className="boddy1Title"><b>Proporcione mais <font color="#07E5EB">amor e cuidado</font> para seu pet</b></h1>
+              <h1 className="boddy1Title"><b>Proporcione mais <font color="#ce1998">amor e cuidado</font> para seu pet</b></h1>
               <p className="boddy1Text">O Pet Care Project oferece todo o cuidado, amor e conforto que o seu pet precisa</p>
             </Box>
             <Box mt={3} gridColumn={gridColumn.gc6}>

@@ -1,8 +1,6 @@
 .boddy1 {
   background-image: url("../../images/shape.png");
-  position: absolute;
   height: 470px;
-  left: 0px;
   width: 1440px;
 }
 
@@ -21,7 +19,7 @@
 }
 
 .boddy2 {
-  background-image: url("../../images//shape2.png");
+  background-color: #f57ed1;
   position: absolute;
   height: 300px;
   left: 0px;

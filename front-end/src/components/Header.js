@@ -59,11 +59,11 @@ function Header() {
               <Box mt={3} gridColumn={gridColumn.gc2}>
                 <p>Menu 5</p>
               </Box>
-              <Box mt={3} gridColumn={gridColumn.gc1}>
+              <Box mt={3} >
                 <button className="whiteButton">BUTTON</button>
               </Box>
-              <Box mt={3} mr={3} gridColumn={gridColumn.gc1}>
-                <button className="blueButton">BUTTON</button>
+              <Box mt={3} mr={3} >
+                <button className="pinkButton">BUTTON</button>
               </Box>
             </Grid>
           </Box>
