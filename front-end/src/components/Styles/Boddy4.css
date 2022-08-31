@@ -1,0 +1,56 @@
+.boddy4 {
+    background-image: url("../../images/shape4.jpeg");
+    position: absolute;
+    margin-top: 2500px;
+}
+
+.imageVideo {
+    height: 80%;
+}
+
+.buttonPlay {
+    background-color: #F1F3F5;
+    border: solid 1px #F1F3F5;
+    box-shadow:0 5px 1px black;
+    height: 30px;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.anuncio {
+    margin-left: 50px;
+    margin-top: 130px;
+}
+
+.h1Anuncio {
+    font-size: larger;
+}
+
+.anuncio2 {
+    margin-top: 10%;
+}
+
+.h1Anuncio2 {
+    font-size: larger;
+    margin-left: 50px;
+}
+
+.p1Anuncio2 {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.p2Anuncio2 {
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.buttonCreatePart4 {
+    background-color: #19C1CE;
+    border: solid 1px #19C1CE;
+    box-shadow:0 5px 1px black;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 300px;
+}

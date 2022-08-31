@@ -1,0 +1,49 @@
+.boddy1 {
+  background-image: url("../../images/shape.png");
+  position: absolute;
+  height: 470px;
+  left: 0px;
+  width: 1440px;
+}
+
+.boddy1Title {
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-top: 90px;
+  font-size:1.2cm;
+  text-align:left;
+}
+
+.boddy1Text {
+  font-size: large;
+  margin-left: 50px;
+  text-align: left;
+}
+
+.boddy2 {
+  background-image: url("../../images//shape2.png");
+  position: absolute;
+  height: 300px;
+  left: 0px;
+  top: 460px;
+  width: 1440px;
+}
+
+.boddy2Title {
+  color: white;
+  font-size:xx-large;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+.boddy2Text {
+  color: white;
+  margin-left: 50px;
+}
+
+.boddy2Text2 {
+  color: white;
+  margin-left: 50px;
+  margin-top: 15px;
+}

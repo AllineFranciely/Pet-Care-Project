@@ -1,0 +1,38 @@
+.boddyPart2 {
+  background-image: url('../../images/shape3.png');
+  background-repeat: no-repeat;
+  height: 2000px;
+  left: 0px;
+  margin-top: 555px;
+  width: 1550px;
+}
+
+.img1 {
+  height: 70%;
+  margin-left: 75px;
+  margin-top: 30%;
+}
+
+.textoBoddyPart2 {
+  position: absolute;
+  margin-left: 55%;
+  margin-top: 3%;
+}
+
+.title1Part2 {
+  font-size: xx-large;
+}
+
+.p1Part2 {
+  font-size: larger;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.linha1 {
+  margin-top: 7px;
+}
+
+.linhaExtra {
+  margin-left: 20px;
+}

@@ -1,0 +1,45 @@
+.formInteiro {
+  background-color: white;
+  border: solid 1px black;
+  box-shadow: 0 12px 16px 0 rgb(160, 159, 159), 0 17px 50px 0 rgb(163, 162, 162);
+  height: 880px;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 20px;
+  width: 35%;
+  z-index: 10;
+}
+
+.titleForm {
+  text-align: center;
+}
+
+.boddy1P {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.boddyForm {
+  margin-left: 20px;
+}
+
+.inputMask {
+  border: solid 1px rgb(221, 220, 220);
+  border-radius: 3%;
+  height: 37px;
+  width: 430px;
+}
+
+a:link {
+  color: #07E5EB;
+}
+
+.buttonCreate {
+  background-color: #F2BF4E;
+  border: solid 1px #F2BF4E;
+  box-shadow:0 5px 1px black;
+  height: 30px;
+  margin-left: 15%;
+  margin-top: 10px;
+  width: 300px;
+}

@@ -1,0 +1,24 @@
+.logo {
+  height: 100%;
+  width: 70%;
+}
+
+.drop{
+  height: 15px;
+  width: 15px;
+}
+
+.blueButton {
+  background-color: #19C1CE;
+  border: solid 1px #19C1CE;
+  box-shadow:0 5px 1px black;
+  height: 30px;
+  width: 80px;
+}
+
+.whiteButton {
+  border: solid 2px black;
+  box-shadow:0 5px 1px black;
+  height: 30px;
+  width: 80px;
+}
