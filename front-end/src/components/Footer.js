@@ -49,7 +49,7 @@ function Footer() {
                   <Box gridColumn={gridColumn.gc6}>
                     <button>
                       <a
-                        href="https://twitter.com/rd_station"
+                        href="ssssssssssssssss"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -59,7 +59,7 @@ function Footer() {
                     </button>
                     <button>
                       <a
-                        href="https://www.facebook.com/ResultadosDigitais/"
+                        href="ssssssssssssssss"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -69,7 +69,7 @@ function Footer() {
                     </button>
                     <button>
                       <a
-                        href="https://www.linkedin.com/company/resultadosdigitais"
+                        href="ssssssssssssssssss"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -79,7 +79,7 @@ function Footer() {
                     </button>
                     <button>
                       <a
-                        href="https://www.instagram.com/resdigitais/"
+                        href="ssssssssssssss"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -89,7 +89,7 @@ function Footer() {
                     </button>
                     <button>
                       <a
-                        href="https://www.youtube.com/channel/UC5lPKvmw6-DFya_qreisENQ"
+                        href="ssssssssssssssss"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -102,7 +102,7 @@ function Footer() {
               <Box gridColumn={gridColumn.gc12}>
                 <hr size="1000" width="100%" className="footerLine"></hr>
                 <Box gridColumn={gridColumn.gc6}>
-                  <p className="pFooter">© 2022 <b>RD Station</b>. Política de Privacidade.</p>
+                  <p className="pFooter">© 2022 <b>Alline Franciely</b>. Política de Privacidade.</p>
                 </Box>
               </Box>
             </Grid>

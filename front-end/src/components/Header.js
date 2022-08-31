@@ -4,6 +4,7 @@ import { gridColumn } from '../utils/gridcolumn';
 import { Box, Grid, Flex } from '@chakra-ui/react';
 import Drop from '../images/drop.png';
 import MenuDropdown from './MenuDropdown';
+import Logo from '../images/Logo.png';
 
 function Header() {
 
@@ -26,7 +27,7 @@ function Header() {
           maxBlockSize={'200px'}
         >
           <Box mt={2} ml={10} gridColumn={gridColumn.gc2}>
-            
+            <img className="logo" src={Logo} alt="logo"/>
           </Box>
           <Box mt={3} gridColumn={gridColumn.gc10}>
             <Grid

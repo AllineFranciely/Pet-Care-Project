@@ -1,6 +1,11 @@
+.headerInteiro {
+  background-color: rgb(250, 199, 246);
+  height: 110px;
+}
+
 .logo {
   height: 100%;
-  width: 70%;
+  width: 50%;
 }
 
 .drop{
@@ -9,8 +14,8 @@
 }
 
 .blueButton {
-  background-color: #19C1CE;
-  border: solid 1px #19C1CE;
+  background-color: #ce1998;
+  border: solid 1px #ce1989;
   box-shadow:0 5px 1px black;
   height: 30px;
   width: 80px;
