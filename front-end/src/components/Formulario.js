@@ -97,6 +97,9 @@ function Formulario() {
                   onBlur={formik.handleBlur}
                   value={formik.values.Nome}
                 />
+                {formik.touched.Nome && formik.errors.Nome ? (
+                  <div>{formik.errors.Nome}</div>
+                ) : null}
               </Box>
               <Box mt={3} gridColumn={gridColumn.gc6}>
                 <p><b>E o nome do seu Pet?</b></p>
@@ -108,6 +111,9 @@ function Formulario() {
                   onBlur={formik.handleBlur}
                   value={formik.values.NomePet}
                 />
+                {formik.touched.NomePet && formik.errors.NomePet ? (
+                  <div>{formik.errors.NomePet}</div>
+                ) : null}
               </Box>
               <Box mt={3} gridColumn={gridColumn.gc6}>
                 <p><b>Seu email</b></p>
@@ -119,6 +125,9 @@ function Formulario() {
                   onBlur={formik.handleBlur}
                   value={formik.values.Email}
                 />
+                {formik.touched.Email && formik.errors.Email ? (
+                  <div>{formik.errors.Email}</div>
+                ) : null}
               </Box>
               <Box mt={3} gridColumn={gridColumn.gc6}>
                 <p><b>Seu telefone</b></p>
@@ -131,6 +140,9 @@ function Formulario() {
                   onBlur={formik.handleBlur}
                   value={formik.values.Phone}
                 />
+                {formik.touched.Phone && formik.errors.Phone ? (
+                  <div>{formik.errors.Phone}</div>
+                ) : null}
               </Box>
               <Box mt={3} gridColumn={gridColumn.gc6}>
                 <p><b>Qual a espéciedo seu pet</b></p>
@@ -142,6 +154,9 @@ function Formulario() {
                   onBlur={formik.handleBlur}
                   value={formik.values.Pet}
                 />
+                {formik.touched.Pet && formik.errors.Pet ? (
+                  <div>{formik.errors.Pet}</div>
+                ) : null}
               </Box>
               <Box mt={3} gridColumn={gridColumn.gc6}>
                 <p><b>Crie uma senha</b></p>
@@ -153,6 +168,9 @@ function Formulario() {
                   onBlur={formik.handleBlur}
                   value={formik.values.Password}
                 />
+                {formik.touched.Password && formik.errors.Password ? (
+                  <div>{formik.errors.Password}</div>
+                ) : null}
               </Box>
               <Box mt={3} gridColumn={gridColumn.gc6}>
                 <p><b>Confirme sua senha</b></p>
@@ -164,6 +182,9 @@ function Formulario() {
                   onBlur={formik.handleBlur}
                   value={formik.values.PasswordConfirm}
                 />
+                {formik.touched.PasswordConfirm && formik.errors.PasswordConfirm ? (
+                  <div>{formik.errors.PasswordConfirm}</div>
+                ) : null}
               </Box>
               <Box ml={5} mt={3} gridColumn={gridColumn.gc6}>
                 <ul>
