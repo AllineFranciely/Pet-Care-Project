@@ -11,20 +11,13 @@ import api from '../services/api';
 
 function Formulario() {
 
-  const optionsCargo = [
-    'Sócio(a) / CEO / Proprietário(a)',
-    'Diretor(a) de Vendas',
-    'Diretor(a) de Marketing',
-    'Diretor(a) Outras Áreas',
-    'Gerente de Marketing',
-    'Gerente de Vendas',
-    'Coordenador(a)/Supervisor(a) de Marketing',
-    'Coordenador(a)/Supervisor(a) de Vendas',
-    'Analista/Assistente de Marketing',
-    'Analista/Assistente de Vendas',
-    'Vendedor(a) / Executivo(a) de Contas',
-    'Estudante',
-    'Outros Cargos'
+  const optionsPet = [
+    'Selecione',
+    'Cachorro',
+    'Gato',
+    'Hamster',
+    'Ave',
+    'Outros'
   ];
   const [user, setUser] = useState({});
 
@@ -44,26 +37,26 @@ function Formulario() {
       Object.keys(user).length > 0
         ? user
         : {
-          Name: '',
+          Nome: '',
+          Nomepet: '',
           Email: '',
           Phone: '',
-          Occupation: '',
+          Pet: '',
           Password: '',
           PasswordConfirm: '',
-          HasSite: false,
-          Site: '',
         },
 
     validationSchema: yup.object({
-      Name: yup.string().required('O campo nome é obrigatório.'),
-      Email: yup.string().email('Entre com um email válido').required('O campo email é obrigatório.'),
-      Phone: yup.number().required('O campo telefone é obrigatório'),
-      Occupation: yup.string().required('O campo cargo de ocupação é obrigatório'),
+      Nome: yup.string().required('O campo nome é obrigatório.').nullable(),
+      NomePet: yup.string().required('O campo nome é obrigatório.').nullable(),
+      Email: yup.string().email('Entre com um email válido').required('O campo email é obrigatório.').nullable(),
+      Phone: yup.number().typeError('Digite apenas números').required('O campo telefone é obrigatório').nullable(),
+      Pet: yup.string().required('O campo cargo de ocupação é obrigatório').nullable(),
       Password: yup.string().required('O campo de senha é obrigatótio')
         .min(6, 'A senha deve ter pelo menos 56 caracteres').max(10, 'A senha deve possuir no máximo 10 caracteres'),
       PasswordConfirm: yup.string().required('O campo de confirmação de senha é obrigatório')
-        .oneOf([yup.ref('Password')], 'As senhas devems er iguais'),
-      Site: yup.string().url('Entre com um endereço válido')
+        .oneOf([yup.ref('Password')], 'As senhas devems er iguais').nullable(),
+      Site: yup.string().url('Entre com um endereço válido').nullable()
     }),
 
     onSubmit: values => {
@@ -73,16 +66,12 @@ function Formulario() {
 
   return (
     <div className="formInteiro">
-      <Box mt={2} mb={4} gridColumn={gridColumn.gc4}>
-        <h1 className="titleForm"><b>SSSSSSSSSSSSSSSS</b></h1>
-        <p className="boddy1P">SSSSSSSSSSSSSSSS 😉</p>
-        <hr size="50" width="100%" className="dropLine"></hr>
-      </Box>
+
       <Flex
         flexGrow={1}
         id="content"
         justifyContent="center"
-        height="100vh"
+        height="fit-content"
       >
         <Grid
           gridTemplateColumns="repeat(12, 1fr)"
@@ -92,20 +81,36 @@ function Formulario() {
           maxBlockSize={'200px'}
         >
           <form className="boddyForm" onSubmit={formik.handleSubmit}>
+            <Box mt={2} mb={4} gridColumn={gridColumn.gc4}>
+              <h1 className="titleForm"><b>Cadastre-se para ficar por dentro das novidades</b></h1>
+              <p className="boddy1P">Prometemos não enviar muitos emails 😉</p>
+              <hr size="50" width="100%" className="dropLine"></hr>
+            </Box>
             <Box gridColumn={gridColumn.gc4}>
               <Box mt={3} gridColumn={gridColumn.gc6}>
                 <p><b>Diga, qual seu nome?</b></p>
                 <Input
-                  id="Name"
-                  name="Name"
+                  id="Nome"
+                  name="Nome"
                   type="text"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.Name}
+                  value={formik.values.Nome}
                 />
               </Box>
               <Box mt={3} gridColumn={gridColumn.gc6}>
-                <p><b>Seu email de trabalho</b></p>
+                <p><b>E o nome do seu Pet?</b></p>
+                <Input
+                  id="NomePet"
+                  name="NomePet"
+                  type="text"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.NomePet}
+                />
+              </Box>
+              <Box mt={3} gridColumn={gridColumn.gc6}>
+                <p><b>Seu email</b></p>
                 <Input
                   id="Email"
                   name="Email"
@@ -118,7 +123,6 @@ function Formulario() {
               <Box mt={3} gridColumn={gridColumn.gc6}>
                 <p><b>Seu telefone</b></p>
                 <InputMask
-                  mask="(99)9999[9]-9999"
                   className="inputMask"
                   id="Phone"
                   name="Phone"
@@ -129,14 +133,14 @@ function Formulario() {
                 />
               </Box>
               <Box mt={3} gridColumn={gridColumn.gc6}>
-                <p><b>Seu cargo de ocupação</b></p>
+                <p><b>Qual a espéciedo seu pet</b></p>
                 <InputSelect
-                  options={optionsCargo}
-                  id="Occupation"
-                  name="Occupatio"
+                  options={optionsPet}
+                  id="Pet"
+                  name="Pet"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.Occupatio}
+                  value={formik.values.Pet}
                 />
               </Box>
               <Box mt={3} gridColumn={gridColumn.gc6}>
@@ -161,16 +165,6 @@ function Formulario() {
                   value={formik.values.PasswordConfirm}
                 />
               </Box>
-              <Box mt={3} gridColumn={gridColumn.gc6}>
-                <p><b>Qual o site da sua empresa?</b></p>
-                <Input
-                  id="Site"
-                  name="Site"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.Site}
-                />
-              </Box>
               <Box ml={5} mt={3} gridColumn={gridColumn.gc6}>
                 <ul>
                   <li>*Você pode alterar suas permissões de comunicação a qualquer tempo.
@@ -179,13 +173,7 @@ function Formulario() {
               </Box>
               <Box ml={5} mt={3} gridColumn={gridColumn.gc6}>
                 <button className="buttonCreate">
-                  <a
-                    href="ssssssssss"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    CRIAR MINHA CONTA
-                  </a>
+                  CRIAR MINHA CONTA
                 </button>
               </Box>
             </Box>
