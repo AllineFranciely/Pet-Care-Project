@@ -1,7 +1,7 @@
-.boddy4 {
+.boddy4Inteiro {
     background-image: url("../../images/shape4.jpeg");
     position: absolute;
-    margin-top: 3000px;
+    margin-top: 5000px;
 }
 
 .imageVideo {
@@ -24,10 +24,6 @@
 
 .h1Anuncio {
     font-size: larger;
-}
-
-.anuncio2 {
-    margin-top: 10%;
 }
 
 .h1Anuncio2 {

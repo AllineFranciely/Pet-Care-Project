@@ -2,7 +2,7 @@
   background-color: white;
   border: solid 1px black;
   box-shadow: 0 12px 16px 0 rgb(160, 159, 159), 0 17px 50px 0 rgb(163, 162, 162);
-  height: 820px;
+  height: 600px;
   position: absolute;
   margin-left: 5%;
   margin-top: 20px;
@@ -28,7 +28,7 @@
   border: solid 1px rgb(221, 220, 220);
   border-radius: 3%;
   height: 37px;
-  width: 430px;
+  width: 450px;
 }
 
 a:link {
