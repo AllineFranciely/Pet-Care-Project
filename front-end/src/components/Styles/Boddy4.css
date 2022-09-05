@@ -1,7 +1,7 @@
 .boddy4 {
     background-image: url("../../images/shape4.jpeg");
     position: absolute;
-    margin-top: 2500px;
+    margin-top: 3000px;
 }
 
 .imageVideo {
@@ -53,4 +53,9 @@
     margin-left: 50px;
     margin-top: 10px;
     width: 300px;
+}
+
+.petImg {
+    height: 80%;
+    width: 80%;
 }

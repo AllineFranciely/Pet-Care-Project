@@ -53,10 +53,9 @@ function Formulario() {
       Phone: yup.number().typeError('Digite apenas números').required('O campo telefone é obrigatório').nullable(),
       Pet: yup.string().required('O campo cargo de ocupação é obrigatório').nullable(),
       Password: yup.string().required('O campo de senha é obrigatótio')
-        .min(6, 'A senha deve ter pelo menos 56 caracteres').max(10, 'A senha deve possuir no máximo 10 caracteres'),
+        .min(6, 'A senha deve ter pelo menos 6 caracteres').max(10, 'A senha deve possuir no máximo 10 caracteres'),
       PasswordConfirm: yup.string().required('O campo de confirmação de senha é obrigatório')
-        .oneOf([yup.ref('Password')], 'As senhas devems er iguais').nullable(),
-      Site: yup.string().url('Entre com um endereço válido').nullable()
+        .oneOf([yup.ref('Password')], 'As senhas devem ser iguais').nullable()
     }),
 
     onSubmit: values => {
@@ -66,21 +65,21 @@ function Formulario() {
 
   return (
     <div className="formInteiro">
-
+      <form className="boddyForm" onSubmit={formik.handleSubmit}>
       <Flex
         flexGrow={1}
         id="content"
         justifyContent="center"
-        height="fit-content"
+        height="60vh"
       >
         <Grid
           gridTemplateColumns="repeat(12, 1fr)"
-          gap={'10px'}
+          gap="10px"
           width="100%"
           height="100%"
-          maxBlockSize={'200px'}
+          maxBlockSize="200px"
         >
-          <form className="boddyForm" onSubmit={formik.handleSubmit}>
+          <Box gridColumn={gridColumn.gc12}>
             <Box mt={2} mb={4} gridColumn={gridColumn.gc4}>
               <h1 className="titleForm"><b>Cadastre-se para ficar por dentro das novidades</b></h1>
               <p className="boddy1P">Prometemos não enviar muitos emails 😉</p>
@@ -198,10 +197,11 @@ function Formulario() {
                 </button>
               </Box>
             </Box>
-          </form>
+          </Box>
         </Grid>
       </Flex>
-    </div>
+    </form>
+    </div >
   );
 }
 

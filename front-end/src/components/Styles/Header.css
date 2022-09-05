@@ -1,11 +1,13 @@
 .headerInteiro {
-  background-color: rgb(250, 199, 246);
+  background-color: rgb(247, 189, 242);
   height: 110px;
 }
 
 .logo {
-  height: 100%;
-  width: 50%;
+  height: 70%;
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 60%;
 }
 
 .drop{

@@ -29,7 +29,7 @@
               maxBlockSize={'200px'}
             >
               <Box gridColumn={gridColumn.gc6}>
-                <h1 className="titlePart3"><b>SSSSSS</b></h1>
+                <h1 className="titlePart3"><b>AAAA</b></h1>
                 <h1 className="titlePart3"><b>SSSSSS</b></h1>
               </Box>
             </Grid>
