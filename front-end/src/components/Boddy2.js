@@ -1,24 +1,43 @@
 import React from 'react';
+import { Box, Flex, Grid } from '@chakra-ui/react';
+import { gridColumn } from '../utils/gridcolumn';
 import './Styles/Boddy2.css';
 import { CheckIcon } from '@chakra-ui/icons'
+import Cat from '../images/cat.jpg';
 
 function Boddy2() {
   return (
     <div boddy1Inteiro>
-      <h1 className="title1Part2"><b>Conheça alguns dos nossos clientes</b></h1>
-      <h1 className="title1Part2"><b>mas cuidado, é muuuuuuita fofura</b></h1>
-      <p className="p1Part2" >SSSSSS</p>
-      <p className="linha1"> <CheckIcon color="#07E5EB" /> <b>SSSSSS</b> SSSSSS</p>
-      <p className="linhaExtra">SSSSSS</p>
-      <p className="linha1"> <CheckIcon color="#07E5EB" /> <b>SSSSSS</b>SSSSSS</p>
-      <p className="linhaExtra">SSSSSS</p>
-      <p className="linha1"> <CheckIcon color="#07E5EB" /> <b>SSSSSS</b>para apoiar  na</p>
-      <p className="linhaExtra">SSSSSS</p>
-      <p className="linhaExtra">SSSSSS</p>
-      <p className="linha1"> <CheckIcon color="#07E5EB" /> <b>SSSSSS</b>SSSSSS</p>
-      <p className="linhaExtra">SSSSSS <b>SSSSSS</b> SSSSSS</p>
-      <p className="linha1"> <CheckIcon color="#07E5EB" /> <b>SSSSSS</b>SSSSSS <font color="#07E5EB">SSSSSS</font> SSSSSS</p>
-      <p className="linhaExtra">SSSSSS</p>
+      <Flex
+        flexGrow={1}
+        id="content"
+        justifyContent="center"
+        minHeight="100vh"
+      >
+        <Grid
+          gridTemplateColumns="repeat(12, 1fr)"
+          gap={'10px'}
+          width="100%"
+          height="fit-content"
+        >
+          <Box p={4} gridColumn={gridColumn.gc6} className="searchbuttons">
+            <img src={ Cat } alt="cat" />
+          </Box>
+          <Box mt={150} gridColumn={gridColumn.gc6} className="searchbuttons">
+            <h1 className="title1Part2"><b>Aqui o seu pet tem</b></h1>
+            <p className="linha1"> <CheckIcon color="#07E5EB" /> <b>Produtos de qualidade</b></p>
+            <p className="linhaExtra">Só utilizamos produtos confiáveis para segurança do seu amigo</p>
+            <p className="linha1"> <CheckIcon color="#07E5EB" /> <b>Pet táxi</b></p>
+            <p className="linhaExtra">Buscamos e entregamos seu amigo com conforto e segurança</p>
+            <p className="linha1"> <CheckIcon color="#07E5EB" /> <b>Água quentinha e secagem anti bacteriana</b></p>
+            <p className="linhaExtra">Seu pet não passa frio</p>
+            <p className="linha1"> <CheckIcon color="#07E5EB" /> <b>"Quarto" confortável</b></p>
+            <p className="linhaExtra">Seu pet tem conforto e segurança caso precise se instalar por algus dias em nosso hotel</p>
+            <p className="linha1"> <CheckIcon color="#07E5EB" /> <b>Variedade de produtos</b></p>
+            <p className="linhaExtra">Contamos com um estoque diversificado de brinquedos, petiscos, roupas, ração e tudo que seu amigo precisa</p>
+          </Box>
+        </Grid>
+      </Flex>
     </div >
   );
 }

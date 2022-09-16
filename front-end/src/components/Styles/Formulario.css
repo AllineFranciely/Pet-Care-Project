@@ -2,7 +2,7 @@
   background-color: white;
   border: solid 1px black;
   box-shadow: 0 12px 16px 0 rgb(160, 159, 159), 0 17px 50px 0 rgb(163, 162, 162);
-  height: 600px;
+  height: 9%;
   position: absolute;
   margin-left: 5%;
   margin-top: 20px;
@@ -20,15 +20,11 @@
   margin-left: 10px;
 }
 
-.boddyForm {
-  margin-left: 20px;
-}
-
 .inputMask {
   border: solid 1px rgb(221, 220, 220);
-  border-radius: 3%;
-  height: 37px;
-  width: 450px;
+  border-radius: 2%;
+  height: 40px;
+  width: 440px;
 }
 
 a:link {
@@ -40,7 +36,7 @@ a:link {
   border: solid 1px #ce1989;
   box-shadow:0 5px 1px black;
   height: 30px;
-  margin-left: 12%;
+  margin-left: 15%;
   margin-top: 10px;
   width: 300px;
 }

@@ -4,7 +4,6 @@ import { gridColumn } from '../utils/gridcolumn';
 import { Box, Grid, Flex } from '@chakra-ui/react';
 import { Input } from '@chakra-ui/react';
 import InputSelect from '../components/InputSelect';
-import InputMask from "react-input-mask";
 import { useFormik } from 'formik';
 import * as yup from "yup";
 import api from '../services/api';
@@ -64,14 +63,13 @@ function Formulario() {
           flexGrow={1}
           id="content"
           justifyContent="center"
-          height="60vh"
+          minHeight="100vh"
         >
           <Grid
             gridTemplateColumns="repeat(12, 1fr)"
-            gap="10px"
+            gap={'10px'}
             width="100%"
-            height="100%"
-            maxBlockSize="200px"
+            height="fit-content"
           >
             <Box gridColumn={gridColumn.gc12}>
               <Box mt={2} mb={4} gridColumn={gridColumn.gc4}>
@@ -80,7 +78,7 @@ function Formulario() {
                 <hr size="50" width="100%" className="dropLine"></hr>
               </Box>
               <Box gridColumn={gridColumn.gc4}>
-                <Box mt={3} gridColumn={gridColumn.gc6}>
+                <Box p={3} gridColumn={gridColumn.gc6}>
                   <p><b>Diga, qual seu nome?</b></p>
                   <Input
                     id="Nome"
@@ -94,7 +92,7 @@ function Formulario() {
                     <div>{formik.errors.Nome}</div>
                   ) : null}
                 </Box>
-                <Box mt={3} gridColumn={gridColumn.gc6}>
+                <Box p={3} gridColumn={gridColumn.gc6}>
                   <p><b>E o nome do seu Pet?</b></p>
                   <Input
                     id="NomePet"
@@ -108,7 +106,7 @@ function Formulario() {
                     <div>{formik.errors.NomePet}</div>
                   ) : null}
                 </Box>
-                <Box mt={3} gridColumn={gridColumn.gc6}>
+                <Box p={3} gridColumn={gridColumn.gc6}>
                   <p><b>Seu email</b></p>
                   <Input
                     id="Email"
@@ -122,10 +120,9 @@ function Formulario() {
                     <div>{formik.errors.Email}</div>
                   ) : null}
                 </Box>
-                <Box mt={3} gridColumn={gridColumn.gc6}>
+                <Box p={3} gridColumn={gridColumn.gc6}>
                   <p><b>Seu telefone</b></p>
-                  <InputMask
-                    className="inputMask"
+                  <Input
                     id="Phone"
                     name="Phone"
                     type="number"
@@ -137,7 +134,7 @@ function Formulario() {
                     <div>{formik.errors.Phone}</div>
                   ) : null}
                 </Box>
-                <Box mt={3} gridColumn={gridColumn.gc6}>
+                <Box p={3} gridColumn={gridColumn.gc6}>
                   <p><b>Qual a espéciedo seu pet</b></p>
                   <InputSelect
                     options={optionsPet}
@@ -151,7 +148,7 @@ function Formulario() {
                     <div>{formik.errors.Pet}</div>
                   ) : null}
                 </Box>
-                <Box ml={5} mt={3} gridColumn={gridColumn.gc6}>
+                <Box ml={8} mt={3} gridColumn={gridColumn.gc6}>
                   <ul>
                     <li>*Você pode alterar suas permissões de comunicação a qualquer tempo.
                     </li>

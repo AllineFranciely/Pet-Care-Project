@@ -1,34 +1,43 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Box, Flex, Grid } from '@chakra-ui/react';
+import { gridColumn } from '../utils/gridcolumn';
 import './Styles/Header.css';
-import Drop from '../images/drop.png';
-import MenuDropdown from './MenuDropdown';
 import Logo from '../images/Logo.png';
 
 function Header() {
 
-  const [showMenuDropdown, setShowMenuDropdown] = useState(false);
-
   return (
     <div className="headerInteiro">
-      <img className="logo" src={Logo} alt="logo" />
-      <p>Menu 1</p>
-      <p>
-        Menu 2
-        <button
-          onClick={() => setShowMenuDropdown(!showMenuDropdown)}>
-          <img className="drop" src={Drop} alt="Menu Drop"></img>
-        </button>
-      </p>
-      <p>Menu 3</p>
-      <p>Menu 4</p>
-      <p>Menu 5</p>
-      <button className="whiteButton">BUTTON</button>
-      <button className="pinkButton">BUTTON</button>
-      {showMenuDropdown ? (
-        <MenuDropdown />
-      ) : (
-        ''
-      )}
+      <Flex
+        flexGrow={1}
+        id="content"
+        justifyContent="center"
+        minHeight="100vh"
+      >
+        <Grid
+          gridTemplateColumns="repeat(12, 1fr)"
+          gap={'10px'}
+          width="100%"
+          height="fit-content"
+        >
+          <Box ml={10} gridColumn={gridColumn.gc3} >
+            <img className="logo" src={Logo} alt="logo" />
+          </Box>
+          <Box mt={5} gridColumn={gridColumn.gc2} >
+            <p>Menu 1</p>
+          </Box>
+          <Box mt={5} gridColumn={gridColumn.gc2} >
+            <p>Menu 2</p>
+          </Box>
+          <Box mt={5} gridColumn={gridColumn.gc2} >
+            <p>Menu 3</p>
+          </Box>
+          <Box mt={5} gridColumn={gridColumn.gc3} >
+            <button mr={5} className="whiteButton">BUTTON</button>
+            <button className="pinkButton">BUTTON</button>
+          </Box>
+        </Grid>
+      </Flex>
     </div>
   );
 }

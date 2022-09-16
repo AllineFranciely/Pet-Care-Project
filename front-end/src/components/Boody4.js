@@ -35,6 +35,8 @@ function Boddy4() {
 
   return (
     <div boddy4Inteiro>
+      <h1 className="title1Part2"><b>Conheça alguns dos nossos clientes</b></h1>
+      <h1 className="title1Part2"><b>mas cuidado, é muuuuuuita fofura</b></h1>
       <Carousel responsive={responsive}>
         <img className="petImg" src={Lucky1} alt="Lucky1" />
         <img className="petImg" src={Lucky2} alt="Lucky2" />
@@ -45,19 +47,6 @@ function Boddy4() {
         <img className="petImg" src={Toddy3} alt="Toddy3" />
         <img className="petImg" src={Toddy4} alt="Toddy4" />
       </Carousel>
-      <h1 className="h1Anuncio2"><b>SSSSSSSSSSSSSSSS</b></h1>
-      <h1 className="h1Anuncio2"><b>sssssss</b></h1>
-      <p className="p1Anuncio2">SSSSSSSSSSSSSSs</p>
-      <p className="p2Anuncio2">ssssssssssss</p>
-      <button className="buttonCreatePart4">
-        <a
-          href="sssssss"
-          target="_blank"
-          rel="noreferrer"
-        >
-          CRIAR CONTA GRATUITA
-        </a>
-      </button>
     </div >
   );
 }
