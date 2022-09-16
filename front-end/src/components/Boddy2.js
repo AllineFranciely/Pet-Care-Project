@@ -20,10 +20,10 @@ function Boddy2() {
           width="100%"
           height="fit-content"
         >
-          <Box p={4} gridColumn={gridColumn.gc6} className="searchbuttons">
+          <Box mt={100}  p={4} gridColumn={gridColumn.gc6} className="searchbuttons">
             <img src={ Cat } alt="cat" />
           </Box>
-          <Box mt={150} gridColumn={gridColumn.gc6} className="searchbuttons">
+          <Box mt={250} gridColumn={gridColumn.gc6} className="searchbuttons">
             <h1 className="title1Part2"><b>Aqui o seu pet tem</b></h1>
             <p className="linha1"> <CheckIcon color="#07E5EB" /> <b>Produtos de qualidade</b></p>
             <p className="linhaExtra">Só utilizamos produtos confiáveis para segurança do seu amigo</p>
