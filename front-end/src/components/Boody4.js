@@ -34,7 +34,7 @@ function Boddy4() {
   };
 
   return (
-    <div boddy4Inteiro>
+    <div boddy3Inteiro>
       <h1 className="title1Part4"><b>Conheça alguns dos nossos clientes</b></h1>
       <h1 className="subTitle1Part4"><b>mas cuidado, é muuuuuuita fofura</b></h1>
       <Carousel responsive={responsive} >

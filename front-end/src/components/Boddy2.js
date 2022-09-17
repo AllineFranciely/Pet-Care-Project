@@ -7,7 +7,7 @@ import Cat from '../images/cat.jpg';
 
 function Boddy2() {
   return (
-    <div boddy1Inteiro>
+    <div boddy2Inteiro>
       <Flex
         flexGrow={1}
         id="content"

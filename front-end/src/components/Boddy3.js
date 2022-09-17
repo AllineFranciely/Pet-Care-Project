@@ -12,7 +12,7 @@ import Vetor6 from '../images/vetor6.jpeg';
 function Boddy3() {
 
   return (
-    <div boddy1Inteiro>
+    <div boddy3Inteiro>
       <h1 className="titlePart3"><b>Conheça a nossa equipe</b></h1>
       <h1 className="subTitlePart3"><b>Todos os profissionais são capacitados e apaixonados por pets</b></h1>
       <Flex

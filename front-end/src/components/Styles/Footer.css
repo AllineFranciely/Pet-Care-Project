@@ -21,3 +21,22 @@
     margin-left: 77%;
     margin-top: 7px;
 }
+
+.LogoFooter {
+    height: 10%;
+    width: 7%;
+}
+
+.rede {
+    width: 5%;
+}
+
+.Acima {
+    display: flex;
+    flex-direction: row;
+}
+
+.redesSociais {
+    display: flex;
+    flex-direction: row;
+}
