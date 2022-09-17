@@ -52,6 +52,22 @@
 }
 
 .petImg {
-    height: 80%;
-    width: 80%;
+    height: 70%;
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 70%;
+}
+
+.petImg:hover {
+    font-weight: bolder;
+    transform: scale(1.2);
+}
+
+.title1Part4 {
+    font-size: xx-large;
+    margin-left: 50px;
+}
+
+.subTitle1Part4 {
+    margin-left: 50px;
 }

@@ -34,7 +34,7 @@ function Home() {
           <Box gridColumn={gridColumn.gc12}>
             <Boddy1 />
           </Box>
-          <Box mt={20} gridColumn={gridColumn.gc12}>
+          <Box mt={15} gridColumn={gridColumn.gc12}>
             <Boddy2 />
           </Box>
           <Box gridColumn={gridColumn.gc12}>

@@ -31,7 +31,7 @@ function Boddy1() {
             <p className="boddy2Text">Contamos com os melhores veterinários para cuidar da saúde do seu companheiro.</p>
             <p className="boddy2Text2"><b>E ainda temos o Hotel Pet para cuidar do seu amigo durante suas viagens!</b></p>
           </Box>
-          <Box mt={10} ml={20} gridColumn={gridColumn.gc6} >
+          <Box ml={20} gridColumn={gridColumn.gc6} >
             <Formulario />
           </Box>
         </Grid>

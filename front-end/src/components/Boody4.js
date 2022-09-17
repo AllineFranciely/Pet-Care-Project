@@ -35,9 +35,9 @@ function Boddy4() {
 
   return (
     <div boddy4Inteiro>
-      <h1 className="title1Part2"><b>Conheça alguns dos nossos clientes</b></h1>
-      <h1 className="title1Part2"><b>mas cuidado, é muuuuuuita fofura</b></h1>
-      <Carousel responsive={responsive}>
+      <h1 className="title1Part4"><b>Conheça alguns dos nossos clientes</b></h1>
+      <h1 className="subTitle1Part4"><b>mas cuidado, é muuuuuuita fofura</b></h1>
+      <Carousel responsive={responsive} >
         <img className="petImg" src={Lucky1} alt="Lucky1" />
         <img className="petImg" src={Lucky2} alt="Lucky2" />
         <img className="petImg" src={Lucky3} alt="Lucky3" />
