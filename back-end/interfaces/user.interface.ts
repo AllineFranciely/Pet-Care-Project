@@ -1,6 +1,6 @@
 interface User {
   id?: number;
-  name: string;
+  nome: string;
   petName: string;
   email: string;
   phone: number;
