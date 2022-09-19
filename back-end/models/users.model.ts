@@ -1,28 +1,28 @@
 import { Pool, ResultSetHeader } from 'mysql2/promise';
-import Book from '../interfaces/book.interface';
+import User from '../interfaces/user.interface';
 
-export default class BookModel {
+export default class UserModel {
   public connection: Pool;
 
   constructor(connection: Pool) {
     this.connection = connection;
   }
 
-  public async getAll(): Promise<Book[]> {
+  public async getAll(): Promise<User[]> {
     const result = await this.connection
-      .execute('SELECT * FROM books');
+      .execute('SELECT * FROM users');
     const [rows] = result;
-    return rows as Book[];
+    return rows as User[];
   }
 
-  public async create(book: Book): Promise<Book> {
-    const { title, price, author, isbn } = book;
+  public async create(user: User): Promise<User> {
+    const { nome, petName, email, phone, pet } = user;
     const result = await this.connection.execute<ResultSetHeader>(
-      'INSERT INTO books (title, price, author, isbn) VALUES (?, ?, ?, ?)',
-      [title, price, author, isbn],
+      'INSERT INTO users (nome, petName, email, phone, pet) VALUES (?, ?, ?, ?, ?)',
+      [nome, petName, email, phone, pet],
     );
     const [dataInserted] = result;
     const { insertId } = dataInserted;
-    return { id: insertId, ...book };
+    return { id: insertId, ...user };
   }
 }
