@@ -1,5 +1,5 @@
 .headerInteiro {
-  background-color: rgb(247, 189, 242);
+  background-color: rgb(250, 200, 246);
   display: flex;
   height: 70px;
   justify-content: space-around;
@@ -8,7 +8,7 @@
 
 .logo {
   height: 100%;
-  width: 24%;
+  width: 39%;
 }
 
 .drop{
@@ -29,4 +29,9 @@
   box-shadow:0 5px 1px black;
   height: 30px;
   width: 80px;
+}
+
+.menu:hover {
+  cursor: pointer;
+  text-decoration: underline 3px rgb(245, 4, 185);
 }

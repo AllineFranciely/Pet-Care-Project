@@ -45,14 +45,13 @@ function Formulario() {
 
     validationSchema: yup.object({
       Nome: yup.string().required('O campo nome é obrigatório.').nullable(),
-      NomePet: yup.string().required('O campo nome é obrigatório.').nullable(),
+      NomePet: yup.string().required('O campo nome do pet é obrigatório.').nullable(),
       Email: yup.string().email('Entre com um email válido').required('O campo email é obrigatório.').nullable(),
       Phone: yup.number().typeError('Digite apenas números').required('O campo telefone é obrigatório').nullable(),
-      Pet: yup.string().required('O campo cargo de ocupação é obrigatório').nullable(),
     }),
 
     onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+      alert(JSON.stringify('Dados enviados com sucesso'));
     },
   });
 
@@ -135,7 +134,7 @@ function Formulario() {
                   ) : null}
                 </Box>
                 <Box p={3} gridColumn={gridColumn.gc6}>
-                  <p><b>Qual a espéciedo seu pet</b></p>
+                  <p><b>Qual a espécie do seu pet</b></p>
                   <InputSelect
                     options={optionsPet}
                     id="Pet"
@@ -155,8 +154,8 @@ function Formulario() {
                   </ul>
                 </Box>
                 <Box ml={5} mt={3} gridColumn={gridColumn.gc6}>
-                  <button className="buttonCreate">
-                    CRIAR CADASTRO
+                  <button className="buttonCreate" type="submit">
+                    ENVIAR
                   </button>
                 </Box>
               </Box>

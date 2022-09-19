@@ -20,21 +20,23 @@ function Header() {
           width="100%"
           height="fit-content"
         >
-          <Box ml={10} gridColumn={gridColumn.gc3} >
+          <Box ml={10} gridColumn={gridColumn.gc2} >
             <img className="logo" src={Logo} alt="logo" />
           </Box>
-          <Box mt={5} gridColumn={gridColumn.gc2} >
-            <p>Menu 1</p>
+          <Box mt={5} gridColumn={gridColumn.gc2} className="menu">
+            <p>Pet Shop</p>
+          </Box>
+          <Box mt={5} gridColumn={gridColumn.gc2} className="menu">
+            <p>Banho e Tosa</p>
+          </Box>
+          <Box mt={5} gridColumn={gridColumn.gc2} className="menu">
+            <p>Veterinário</p>
+          </Box>
+          <Box mt={5} gridColumn={gridColumn.gc2} className="menu">
+            <p>Hotel Pet</p>
           </Box>
           <Box mt={5} gridColumn={gridColumn.gc2} >
-            <p>Menu 2</p>
-          </Box>
-          <Box mt={5} gridColumn={gridColumn.gc2} >
-            <p>Menu 3</p>
-          </Box>
-          <Box mt={5} gridColumn={gridColumn.gc3} >
-            <button mr={5} className="whiteButton">BUTTON</button>
-            <button className="pinkButton">BUTTON</button>
+            <button className="whiteButton">BUTTON</button>
           </Box>
         </Grid>
       </Flex>
